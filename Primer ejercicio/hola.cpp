@@ -15,20 +15,27 @@ int main(){
     string nombre ; 
 
     do {
-
-        cout <<  "ingresa la cantidad de alumnos que deseas evaluar "; 
+        cout << "+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++" << endl; 
+        cout <<  "\nIngresa la cantidad de alumnos que deseas evaluar "; 
         cin >> alumnos; 
 
         for(int i = 1 ; i<= alumnos ; i++){
-            cout <<  "ingresa el nombre del alumno -> "; 
-            cin >> nombre ; 
-            cout << "Ingresa la calificaion de matematicas -> "; 
+            cout << "\n+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++" << endl; 
+            cout << "\t          Nombre " << endl; 
+            cout << "+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++" << endl; 
+            cout <<  "\nIngresa el nombre del alumno -> "; 
+            cin >> nombre ;
+            cout << " " << endl; 
+            cout << "+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++" << endl;  
+            cout << "\nIngresa la calificaion de matematicas -> "; 
             cin >> cali ; 
-            cout << "Ingresa la calificaion de español -> "; 
+            cout << "+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++" << endl; 
+            cout << "\nIngresa la calificaion de español -> "; 
             cin >> cali2 ; 
-            cout << "Ingresa la calificacion de fisica -> "; 
+            cout << "\nIngresa la calificacion de fisica -> "; 
             cin >> cali3; 
             califinal = (cali + cali2 + cali3) / 3; 
+            cout << "+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++" << endl; 
             cout << "La calificacion final de -> " << nombre << " es de -> " << califinal << endl ; 
             if (califinal <= 5){
                 cout << "Reprueba\n"; 
