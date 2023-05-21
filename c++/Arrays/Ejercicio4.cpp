@@ -6,7 +6,7 @@ using namespace std ;
 
 int main(){
     int elementos; 
-    int mayor; 
+    int mayor = 0; 
     cout << "Ingresa el numero de elemetos del arreglo -> "; 
     cin >> elementos ; 
     int numeros[elementos]; 
@@ -14,12 +14,12 @@ int main(){
         cout << "Ingresa el elemento -> "; 
         cin >> numeros[i]; 
     }
+
     cout << "Clasificacion de los elementos del arreglo "; 
+
     for (int i = 0 ; i < elementos ; i ++){
-        if (numeros[i] < numeros[i]){
+        if (numeros[i] > mayor){
             mayor = numeros[i]; 
-        }else {
-            mayor = numeros[i] ; 
         }
     }
     cout << " el numero mayor del arreglo es " << mayor << endl; 
