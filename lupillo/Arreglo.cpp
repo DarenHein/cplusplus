@@ -1,3 +1,4 @@
+// primer ejeciocio de la semana 2 de profe lupillo 
 #include <iostream>
 
 using namespace std; 
