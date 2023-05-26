@@ -32,6 +32,11 @@ int main(){
     int superacum = 0 ; 
     string nombre ; 
     int op ; 
+    float mayor ; 
+    float mayor2 ; 
+    float mayor3 ; 
+    float mayor4 ; 
+    float mayor5; 
 
     do{
 
@@ -49,10 +54,18 @@ int main(){
                 cout << "Califiacion no valida favor de ingresar una calificaion valida -> " ; 
                 cin >> materia1[i]; 
             }
-
+                
             suma = suma + materia1[i]; 
 
         }
+        mayor =  materia1[0]; 
+            if(materia1[1] > mayor){
+                mayor = materia1[1]; 
+            }
+            if(materia1[2] > mayor){
+                mayor = materia1[2]; 
+            }
+            cout << "La calificaion mas grande del parcial es -> " << mayor << endl; 
 
         suma =  suma / 3 ; 
         parciales[0] = suma ; 
@@ -76,6 +89,15 @@ int main(){
         suma2 =  suma2 / 3 ; 
         parciales[1] = suma2 ; 
 
+        mayor2 =  materia2[0]; 
+            if(materia2[1] > mayor2){
+                mayor2 = materia2[1]; 
+            }
+            if(materia2[2] > mayor2){
+                mayor2 = materia2[2]; 
+            }
+            cout << "La calificaion mas grande del parcial es -> " << mayor2 << endl; 
+
 
 
 
@@ -96,6 +118,15 @@ int main(){
         suma3 =  suma3 / 3 ; 
         parciales[2] = suma3 ; 
 
+         mayor3 =  materia3[0]; 
+            if(materia3[1] > mayor3){
+                mayor3 = materia3[1]; 
+            }
+            if(materia3[2] > mayor3){
+                mayor3 = materia3[2]; 
+            }
+            cout << "La calificaion mas grande del parcial es -> " << mayor3 << endl; 
+
 
 
         cout << "\nMateria -> Inovacio y tecnologia de la informacion "<< endl ; 
@@ -115,6 +146,15 @@ int main(){
         suma4 =  suma4 / 3 ; 
         parciales[3] = suma4 ;
 
+         mayor4 =  materia4[0]; 
+            if(materia4[1] > mayor){
+                mayor4 = materia4[1]; 
+            }
+            if(materia4[2] > mayor4){
+                mayor4 = materia4[2]; 
+            }
+            cout << "La calificaion mas grande del parcial es -> " << mayor4 << endl; 
+
 
         cout << "\nMateria -> Metodologia agil del desarollo del sistema"<< endl ; 
         for (int i = 0 ; i < 3 ; i ++ ){
@@ -130,6 +170,16 @@ int main(){
 
             suma5 = suma5 + materia5[i]; 
         }
+
+        mayor5 =  materia5[0]; 
+            if(materia5[1] > mayor5){
+                mayor5 = materia5[1]; 
+            }
+            if(materia5[2] > mayor5){
+                mayor5 = materia5[2]; 
+            }
+            cout << "La calificaion mas grande del parcial es -> " << mayor5 << endl; 
+
         suma5 =  suma5 / 3 ; 
         parciales[4] = suma5 ; 
 
@@ -146,6 +196,8 @@ int main(){
         superacum =  acum + acum2 + acum3 + acum4 + acum5; 
 
         // mostrar la tabla de calificaiones 
+
+        cout << "---------------------------------------------------------------------------------------------" << endl ; 
 
         cout << "\n" ; 
         cout << "   \t\t        Parcial 1 \t Parcial 2 \t Parcial 3 \t Califiacion final " << endl; 
@@ -190,6 +242,30 @@ int main(){
         cout << "Nota el alumno tiene -> " << superacum << " Reporbadas " << endl;
         cout << "\n";  
 
+        if (Profinal[0] > 5 ){
+            cout << "El alumno -> " << nombre << " Aprobo el parcial " << endl ; 
+        }
+        else {
+            cout << "El alumno -> "<< nombre << " Reprobo el parcial " << endl; 
+        }
+
+        cout << "---------------------------------------------------------------------------------------------" << endl ; 
+        cout << "   \t\t        Calificaion mas alta " << endl ; 
+        cout << "\n Sistemas Operativos "  ;
+        cout << "\t  "<<mayor << endl ; 
+        cout << "\n Ingles 3            "  ;
+        cout << "\t  "<<mayor2 << endl ; 
+        cout << "\n Estructura de datos "  ; 
+        cout << "\t  "<<mayor3 << endl ; 
+        cout << "\n Inovacion y Tecnolo "  ;
+        cout << "\t  "<<mayor4 << endl ; 
+        cout << "\n Metodologia        "  ;
+        cout << "\t  "<<mayor5 << endl ; 
+
+
+
+
+        cout << "\n"<< endl ; 
        cout << "Deseas Repetir la operacion -> 1- si , 2 - no -> ; " ; 
        cin >> op ;  
     }while(op != 2); 
