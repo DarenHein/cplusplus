@@ -2,6 +2,7 @@
 using namespace std ; 
 
 int main (){
+
     // rpogrma media moda mediana 
     int acum  = 0 ; 
     int igual ; 
@@ -29,6 +30,10 @@ int main (){
         }
     }
     cout << "La moda es -> " << igual << endl ; 
+
+    cout << "Mediana" << endl; 
+
+    
 
 
     cout << "deseas repetir la opcion "<< endl ; 
