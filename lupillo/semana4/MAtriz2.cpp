@@ -35,7 +35,7 @@ int main() {
         }
     }
 
-    // Imprimir la matriz ordenada
+   
      cout << "Matriz ordenada de menor a mayor:\n";
     for (int i = 0; i < 2; i++) {
         for (int j = 0; j < 2; j++) {
