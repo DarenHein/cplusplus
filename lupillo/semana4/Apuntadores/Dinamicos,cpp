@@ -1,0 +1,27 @@
+//* arreglos dinamicos en c++ estos a diferencia de los arreglos normales pueden modificar su tamaño en el curso del programa 
+#include <iostream>
+using namespace std; 
+int main(){
+
+    int elementos; 
+
+    cout << "Ingresa el numero de elementos del arreglo -> "; 
+    cin >> elementos; 
+
+    int *dinamico = new int[elementos]; 
+
+    //* modficar el tamaño del arreglo 
+    for (int i = 0 ; i < elementos ; i ++ ){
+        dinamico[i] = i *6 ; // * esto lo que hace es aumentar casillsa al arreglo 
+    }
+    // * mostrar el arreglo en pantalla 
+    for (int i = 0 ; i < elementos ; i ++ ){
+        cout << dinamico[i] << endl ; 
+    }
+
+    delete[] dinamico; // * eliminar memoria asignada 
+
+
+
+    return 0; 
+}
