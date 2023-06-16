@@ -3,15 +3,13 @@ using namespace std;
 
 int main(){
 
-    // * vamos a hacer arreglos unidimencionles por mes 
     int filas  = 3; 
     int columnas = 3 ; 
     int acumulador = 0 ; 
     int mes = 0 ; 
     int mes2 = 0 ; 
     int mes3 = 0 ;
-    int x = 0 ;  
-
+ 
     int matriz[filas][columnas]; 
 
     cout << "\n" << endl ; 
@@ -22,8 +20,6 @@ int main(){
         for (int j = 0 ; j < columnas ; j++){
            cout << "Ingresa la venta del mes no -> " << i+1 << " -> " ; 
             cin >> matriz[i][j]; 
-            
-
         }
         cout << "\n" ; 
     }
