@@ -5,11 +5,10 @@ using namespace std ;
 struct Nodo{
     int valor ; 
     Nodo*sig; 
-}; 
+}; //* no olvides el puto punto y coma de la estructura media pinche hora por esto :P 
 int main(){
-
     int numero; 
-    Nodo* cabeza = nullptr; 
+    Nodo* cabeza = nullptr; // * es es la cabeza del nodo 
 
     ///* creamos el primer nodo 
     Nodo* nodo = new Nodo(); 
@@ -24,6 +23,7 @@ int main(){
     nodo->sig= nodo2; 
 
     // * por el momento lo dejaremos en dos nodos solo pa que corra 
+    // * tratare de explicarlo de la forma mas sencilla posible 
     Nodo* nodoActual = cabeza;
     while (nodoActual != nullptr) {
         cout << nodoActual->valor << " ";
