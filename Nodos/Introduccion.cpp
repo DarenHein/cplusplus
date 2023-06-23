@@ -1,51 +1,101 @@
 #include <iostream>
 
-//* las listas enlazadas o nodos son estructuras de datos , estas nos las podemos imaginar como una caja que contiene un valor y mas aparte tiene una flecha que apunta al siguiente caja y asi hasta llegar ala final que esta apunta a nulo 
-
 using namespace std;
 
-class Nodo { // * se crea una clase publica de nodos con dos variables una de tipo entero con el valor que se le dara al nodo y un de tipo apuntador de tipo nodo que contiene siguiente 
+class Nodo { 
 public:
-    int valor;
+    string nombre; 
+    int edad ; 
+    string sexo; 
+    int matricula; 
+    string direccion; 
     Nodo* siguiente;
 };
 
 int main() {
-    int numero ; 
-    Nodo* cabeza = nullptr; // * cabeza apunta a nulo 
-
-    // !Crear el primer nodo
-    Nodo* nodo1 = new Nodo(); // *creamos el apuntador 
-    cout << "Ingresa el valor pra el nodo -> "; 
+    int numero; 
+    string nom; 
+    string sex; 
+    string direc;
+    int matri; 
+    Nodo* cabeza = nullptr; 
+    cout << "Primer Estudiante " << endl ; 
+    Nodo* nodo1 = new Nodo(); 
+    cout << "Ingresa tu nombre -> "; 
+    cin >> nom; 
+    cout << "Ingresa tu edad -> "; 
     cin >> numero; 
-    nodo1->valor = numero ; // * valor del nodo 
-    nodo1->siguiente = nullptr; //* apuntamos a nulo 
-    cabeza = nodo1; // * cambiamos la direccion de memoria 
+    cout << "Ingresa tu sexo -> " ; 
+    cin >> sex ; 
+    cout << "Ingresa tu direccion-> " ; 
+    cin >> direc ; 
+    cout << "Ingresa tu matricula-> " ; 
+    cin >> matri ; 
+    nodo1->edad = numero ; 
+    nodo1->nombre  = nom ; 
+    nodo1->sexo = sex; 
+    nodo1->direccion = direc; 
+    nodo1->matricula = matri; 
+    nodo1->siguiente = nullptr; 
+    cabeza = nodo1; 
 
-    // Crear el segundo nodo
+    cout << "Segundo Estudiqante " << endl; 
     Nodo* nodo2 = new Nodo();
-    nodo2->valor = 7;
+    cout << "Ingresa tu nombre -> "; 
+    cin >> nom; 
+    cout << "Ingresa tu edad -> "; 
+    cin >> numero; 
+    cout << "Ingresa tu sexo -> " ; 
+    cin >> sex ; 
+    cout << "Ingresa tu direccion-> " ; 
+    cin >> direc ; 
+    cout << "Ingresa tu matricula-> " ; 
+    cin >> matri ; 
+    nodo2->edad = numero;
+    nodo2->nombre  = nom ; 
+    nodo2->sexo = sex; 
+    nodo2->direccion = direc; 
+    nodo2->matricula = matri;
     nodo2->siguiente = nullptr;
     nodo1->siguiente = nodo2;
 
-    // Crear el tercer nodo
+    cout << "Tercer estudiante " << endl ; 
     Nodo* nodo3 = new Nodo();
-    nodo3->valor = 5;
+    cout << "Ingresa tu nombre -> "; 
+    cin >> nom; 
+    cout << "Ingresa tu edad -> "; 
+    cin >> numero; 
+    cout << "Ingresa tu sexo -> " ; 
+    cin >> sex ; 
+    cout << "Ingresa tu direccion-> " ; 
+    cin >> direc ; 
+    cout << "Ingresa tu matricula-> " ; 
+    cin >> matri ; 
+    nodo3->edad = numero;
+    nodo3->nombre  = nom ; 
+    nodo3->sexo = sex; 
+    nodo3->direccion = direc; 
+    nodo3->matricula = matri;
     nodo3->siguiente = nullptr;
     nodo2->siguiente = nodo3;
 
-    // Recorrer e imprimir los valores de la lista
+    cout << "Personas Registrada"<< endl ; 
     Nodo* nodoActual = cabeza;
     while (nodoActual != nullptr) {
-        cout << nodoActual->valor << " ";
+        cout <<"Nombre -> " << nodoActual->nombre << " ";
+        cout << "\n" ; 
+        cout <<"Edad -> "<< nodoActual->edad << " ";
+        cout << "\n" ; 
+        cout <<"Sexo -> " << nodoActual->sexo<< " ";
+        cout << "\n" ; 
+        cout <<"Direccion -> " << nodoActual->direccion<< " ";
+        cout << "\n" ; 
+        cout << "Matricula -> " << nodoActual->matricula<< " ";
+        cout << "\n" ; 
         nodoActual = nodoActual->siguiente;
     }
     cout << endl;
 
-    // Liberar la memoria
-    delete nodo1;
-    delete nodo2;
-    delete nodo3;
 
     return 0;
 }
