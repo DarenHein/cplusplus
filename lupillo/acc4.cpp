@@ -239,9 +239,7 @@ int main(){
         cout << "   \t\t   "<< Profinal[0] << endl ; 
 
         cout << "\n"; 
-        cout << "Nota el alumno tiene -> " << superacum << " Reporbadas " << endl;
-        cout << "\n";  
-
+       
         if (Profinal[0] > 5 ){
             cout << "El alumno -> " << nombre << " Aprobo el parcial " << endl ; 
         }

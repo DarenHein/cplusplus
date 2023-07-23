@@ -1,0 +1,12 @@
+limitar el trabajo en el proceso en wip 
+
+    es la limitante del progreso que establece los limites en la cantidad de trabajo que se puede realizar working progess en paralelo a cada etapa del proceso esto evita la sobrecarga del trabajo y el cuello de botella lo qe permite mantener el flujo de trabajo constante para la finalizacion de tareas 
+
+    por hacer                                       ->  haciendo                      ->  terminado 
+
+    sacar sistema de informacion del cajero         
+    estblecimeinto de la codificacion 
+    planteamiento de pruebas 
+        analisis 
+        desarollo
+        finalizacion de codigo 
